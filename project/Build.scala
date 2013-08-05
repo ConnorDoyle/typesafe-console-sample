@@ -16,7 +16,7 @@ object SampleAppBuild extends Build {
   lazy val core = Project(
     id = "core",
     base = file("core"),
-    settings = commonSettings ++ atmosSettings
+    settings = commonSettings
   ).configs(
     Atmos
   ).settings(
